@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/bootstrap/bootstrap.min.css' />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/monster-ag" rel="stylesheet">
+    <title>Universidade Monstros</title>
+</head>
+
+<body>
+    <nav class="nav nav-pills justify-content-end flex-column flex-sm-row" id="topo">
+        <a class="nav-link" href="/html/sobre_nos.html">Sobre nós</a>
+        <nav class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Contatos</a>
+            <nav class="dropdown-menu"> <!-- lista de itens do submenu-->
+                <a class="dropdown-item" href="#">Fale conosco</a>
+                <a class="dropdown-item" href="#">Trabalhe conosco</a>
+                <a class="dropdown-item" href="#">Secretaria</a>
+                <hr class="dropdown-divider"> <!-- linha divisória-->
+                <a class="dropdown-item" href="https://www.instagram.com/">Redes Sociais</a>
+            </nav>
+        </nav>
+        <a class="nav-link" href="#cursos">Cursos</a>
+        <a class="nav-link active" href="/html/vestibular.html">Seja aluno</a>
+    </nav>
+    <div class="container">
+        <div class="row text-center icon">
+            <img src="img/icon_principal.png" class="img-fluid" alt="Imagem responsiva">
+        </div>
+        <div class="row text-center">
+            <h1 class="display-1 title">Universidade Monstros</h1>
+            <h1 class="display-3 title">Nosso Mural</h1>
+            <p class="lead"><strong>Site oficial da Escola de Sustos</strong></p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-2 col-md-2 col-sm-12 content">
+                <h1 class="display-4 title">Destaques</h1>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h5 class="lead"><strong>James P. Sullivan</strong></h5>
+                        <p>Prêmio assustador do ano - 2049</p>
+                        <img src="/img/destaques1.png" alt="imagem da pagina" class="destaques" class="img-fluid">
+                        <p>Sulley recebeu o título de "Assustador do ano" por seu excelente desempenho na Escola de
+                            Sustos, provando ser mais que o legado da família. </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="lead"><strong>Mike Wazowski</strong></h5>
+                        <p>Prêmio Olho Brilhante</p>
+                        <img src="/img/destaques2.jpg" alt="imagem da pagina" class="destaques" class="img-fluid">
+                        <p>Mike foi homenageado com o "Prêmio Olho Brilhante" por seu desempenho excepcional em eventos
+                            acadêmicos, esportivos e por sua capacidade única de inspirar seus colegas.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="lead"><strong>Randall Boggs</strong></h5>
+                        <p>Conquista: "Transformação Notável"</p>
+                        <img src="/img/destaques3.jpg" alt="imagem da pagina" class="destaques" class="img-fluid">
+                        <p>Depois de superar seus desafios passados, Randall recebeu a "Transformação Notável" por suas
+                            contribuições significativas para a comunidade, demonstrando uma mudança positiva em sua
+                            abordagem e comportamento.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="container-carrossel">
+                    <div id="carouselIndex" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="0" class="active"
+                                aria-current="true"></button>
+                            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img_carrossel" src="img/carrossel1.jpg"
+                                    alt="imagem do carrossel">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Vencedores dos Jogos Assustadores</h5>
+                                    <p>Conheça a fraternidade vencedora desta edição!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img_carrossel" src="img/carrossel2.jpg"
+                                    alt="imagem do carrossel">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Dias de visitação no Campus</h5>
+                                    <p>Agende uma visita ao nosso Campus e conheça o que ele tem de mais assustador!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img_carrossel" src="img/carrossel3.jpg"
+                                    alt="imagem do carrossel">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Relatos de Estudantes</h5>
+                                    <p>O que nossos monstros tem a dizer da melhor universidade</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img_carrossel" src="img/carrossel4.jpg"
+                                    alt="imagem do carrossel">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Aulas práticas</h5>
+                                    <p>Conheça nossas aulas práticas que te preparam para o mercado de sustos!</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndex"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndex"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5">
+                    <div id="cursos">
+                        <h1 class="display-4 title">Cursos oferecidos</h1>
+                        <p class="lead">Além da famosa escola de sustos, oferecemos as seguintes opções para aqueles que
+                            não são assustadores:</p>
+
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            
+                            <div class="col-md-12">
+                                <div class="bg-secondary text-white p-3 curso">
+                                    <h4>Escola de Sustos: O Curso Magnífico da Universidade Monstros</h4>
+                                    <p>Na Universidade Monstros, temos o orgulho de apresentar a joia da coroa de nossa
+                                        instituição: a renomada Escola de Sustos. Mais do que um simples curso, ela é a
+                                        essência pulsante do nosso compromisso em moldar monstros extraordinários
+                                        capazes de assombrar os mais profundos pesadelos humanos.</p>
+                                    <p>Benefícios oferecidos aos alunos: Curriculum Sombrio, Simulação de Sustos, Corpo
+                                        Docente de Arrepiar, Jogos Universitários, Estágios na Monstros S.A - a maior
+                                        empresa de sustos de Monstrópolis. </p>
+                                        <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-primary text-white p-3 curso">
+                                    <h4>Curso de Terror</h4>
+                                    <p>Este curso mergulha nos aspectos fundamentais do terror e como ele é aplicado no
+                                        mundo dos monstros. Os alunos explorarão técnicas de assustar, análise de
+                                        reações humanas e estudos de criaturas lendárias. O programa destaca-se pela
+                                        prática intensiva em simulações de sustos e avaliações de eficácia na criação de
+                                        medo.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-primary text-white p-3 curso">
+                                    <h4>Curso de Engenharia de Criaturas</h4>
+                                    <p>Os aspirantes a engenheiros de criaturas estudam a anatomia, o comportamento e a
+                                        biologia das diferentes espécies monstruosas. O curso abrange desde a criação de
+                                        dispositivos para facilitar interações amigáveis com humanos até a engenharia de
+                                        tecnologias inovadoras para melhorar a convivência entre monstros e o mundo
+                                        humano.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-success text-white p-3 curso">
+                                    <h4>Curso de Letras e Ciências Sociais e Monstruosidades</h4>
+                                    <p>Este curso combina a análise literária e social com o estudo das peculiaridades
+                                        do
+                                        mundo dos monstros. Os alunos exploram a linguagem monstruosa, estudam a
+                                        evolução da
+                                        sociedade monstruosa e analisam como as representações na mídia impactam a
+                                        perceção
+                                        pública sobre eles.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-success text-white p-3 curso">
+                                    <h4>Curso de Ciências Monstruosas</h4>
+                                    <p>O curso de Ciências Monstruosas é dedicado à pesquisa e descobertas inovadoras no
+                                        campo da biologia, física e química aplicadas aos monstros. Os estudantes
+                                        exploram novas espécies, características únicas e desenvolvem métodos para
+                                        melhorar a saúde e a qualidade de vida dos monstros.</p>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-danger text-white p-3 curso">
+                                    <h4>Curso de Comércio Monstruoso</h4>
+                                    <p>Voltado para monstros empreendedores, este curso abrange temas como gestão de
+                                        negócios monstruosos, marketing, economia e empreendedorismo. Os alunos aprendem
+                                        a criar e gerenciar empresas voltadas para as necessidades específicas da
+                                        comunidade monstruosa.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="bg-danger text-white p-3 curso">
+                                    <h4>Curso de Divisão Aquática</h4>
+                                    <p>Este curso é especializado nas criaturas marinhas e subaquáticas do mundo dos
+                                        monstros. Os estudantes exploram ecossistemas aquáticos, estudam a fisiologia
+                                        das criaturas subaquáticas e aprendem a preservar e proteger os ambientes
+                                        aquáticos do mundo monstruoso.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <h1 class="display-4 title">Noticias</h1>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h5 class="lead"><strong>Inovação Monstruosa na Pesquisa</strong></h5>
+                        <p>Descoberta revolucionária no Departamento de Criaturas Invisíveis.</p>
+                        <a href="#" class="btn btn-sm">Leia Mais</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="lead"><strong>Campeonato Esportivo Interfaculdades</strong></h5>
+                        <p>Resultados e destaques das competições esportivas.</p>
+                        <a href="#" class="btn btn-sm">Leia Mais</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="lead"><strong>Evento Cultural "Gritos de Expressão"</strong></h5>
+                        <p>Recapitulação do festival de talentos e exposições artísticas.</p>
+                        <a href="#" class="btn btn-sm">Leia Mais</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="btn">Ver Jornal da Universidade
+                            Completo</a>
+                    </li>
+                </ul>
+                <div class="container text-center">
+                    <div class="col-lg-12 col-md-4 col-sm-12">
+                        <img src="/img/calendar.png" alt="icone da pagina" id="calendario">
+                        <h1 class="display-4 title">Eventos</h1>
+                        </img>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-warning">Conferência de Criaturas Noturnas -
+                                <strong>15 de Março de 2050</strong>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">Competição de Sustos Interdimensionais -
+                                <strong>25 de Maio de 2050</strong>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">Feira de Invenções Monstruosas -
+                                <strong>10 de Setembro de 2050</strong>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">Palestra: "Inovações na Ciência
+                                Monstruosa" - <strong> 5 de Julho de 2050</strong></li>
+                            <li class="list-group-item list-group-item-warning">Palestra: "Desenvolvendo Talentos
+                                Monstruosos na Área de Sustos" (Palestra com certificado de 5 horas) -<strong> 5 de
+                                    Julho de 2050</strong></li>
+                            <br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <a class="topo" href="#topo">Voltar ao topo</a>
+            <p> &copy; <strong>Universidade Monstros</strong> </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p><strong>Endereço:</strong></p>
+                <p>Rua Assustadora, 123, Bairro Monstruoso
+                    Cidade: Monstropolis, Mundo dos Monstros
+                    CEP: 12345-678</p>
+            </div>
+            <div class="col" id="contato">
+                <p><strong>Contatos:</strong></p>
+                <p>Telefone: (55) 1234-5678</p>
+                <p> E-mail: contato@universidademonstros.com</p>
+            </div>
+            <div class="col" id="redes">
+                <p><strong>Redes Sociais:</strong></p>
+                <p>Facebook: @UniversidadeMonstrosOficial</p>
+                <p>Instagram: @UnivMonstros</p>
+                <p>Twitter: @UMonstros</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

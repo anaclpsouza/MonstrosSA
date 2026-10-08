@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='../css/bootstrap/bootstrap.min.css' />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/monster-ag" rel="stylesheet">
+    <title>Seja Aluno</title>
+</head>
+
+<body class="secundaria">
+    <nav class="nav nav-pills justify-content-end flex-column flex-sm-row" id="topo">
+        <a class="nav-link active" href="/index.html">Página principal</a>
+        <a class="nav-link" href="sobre_nos.html">Sobre Nós</a>
+        <nav class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Contatos</a>
+            <nav class="dropdown-menu"> <!-- lista de itens do submenu-->
+                <a class="dropdown-item" href="#">Fale conosco</a>
+                <a class="dropdown-item" href="#">Trabalhe conosco</a>
+                <a class="dropdown-item" href="#">Secretaria</a>
+                <hr class="dropdown-divider"> <!-- linha divisória-->
+                <a class="dropdown-item" href="https://www.instagram.com">Redes Sociais</a>
+            </nav>
+        </nav>
+    </nav>
+    <div class="container">
+        <div class="row text-center icon">
+            <img src="/img/icon_principal.png" class="img-fluid" alt="Imagem responsiva">
+        </div>
+        <h2 class="title display-2">Vestibular Monstruoso - Inscreva-se</h2>
+
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">Importante</h4>
+            <p>Lembre-se: é necessário ter concluído a escola de nível básica monstruosa para fazer o vestibular!</p>
+            <hr>
+            <p>Após o formulário, as informações adicionais e o agendamento do vestibular serão realizados através do
+                seu e-mail, então certifique-se de colocá-lo corretamente!</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            </button>
+        </div>
+        <section id="formulario" class="formulario">
+            <div class="container">
+                <h2 class="text-center mb-4">Inscrição no Vestibular</h2>
+                <form action="" method="get" class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" id="nomeCompleto" class="form-control" name="nomeCompleto" placeholder="nome" maxlength="30"
+                                required>
+                            <label for="nomeCompleto">Nome Completo</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="nome@exemplo.com" maxlength="50" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                            <input type="number" id="idade" class="form-control" name="idade" placeholder="Idade" required>
+                            <label for="telefone">Qual a sua idade?</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <select id="curso" name="curso" required class="form-select">
+                                <option value="" disabled selected>Selecione o curso desejado</option>
+                                <option value="terror">Terror</option>
+                                <option value="engenharia">Engenharia de Criaturas</option>
+                                <option value="letras">Letras e Ciências Sociais e Monstruosidades</option>
+                                <option value="ciencias">Ciências Monstruosas</option>
+                                <option value="comercio">Comércio Monstruoso</option>
+                                <option value="aquatica">Divisão Aquática</option>
+                                <option value="sustos">Escola de Sustos</option>
+                            </select>
+                            <label for="curso">Escolha do Curso</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="1" id="checkbox">
+                            <label class="form-check-label" for="checkbox">Concordo com as políticas da
+                                universidade.</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label for="motivacao" class="form-label">Por que você deseja ingressar na nossa
+                                universidade?</label>
+                            <textarea class="form-control form-floating" id="motivacao" name="motivacao" rows="4"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="button" id="add" onclick="conferirCampos()" class="btn btn-primary"> Enviar
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+
+
+    </div>
+    <footer>
+        <div class="row">
+            <a class="topo" href="#topo">Voltar ao topo</a>
+            <p> &copy; <strong>Universidade Monstros</strong> </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p><strong>Endereço:</strong></p>
+                <p>Rua Assustadora, 123, Bairro Monstruoso
+                    Cidade: Monstropolis, Mundo dos Monstros
+                    CEP: 12345-678</p>
+            </div>
+            <div class="col" id="contato">
+                <p><strong>Contatos:</strong></p>
+                <p>Telefone: (55) 1234-5678</p>
+                <p> E-mail: contato@universidademonstros.com</p>
+            </div>
+            <div class="col" id="redes">
+                <p><strong>Redes Sociais:</strong></p>
+                <p>Facebook: @UniversidadeMonstrosOficial</p>
+                <p>Instagram: @UnivMonstros</p>
+                <p>Twitter: @UMonstros</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
